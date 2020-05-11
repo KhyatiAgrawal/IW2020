@@ -1,0 +1,33 @@
+Reading data for apple inc. aapl
+date
+2006-10-20     9.914266
+2006-10-23    10.101514
+2006-10-24    10.050671
+2006-10-25    10.128796
+2006-10-26    10.192039
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood               -1376.984
+Date:                             Thu, 07 May 2020   AIC                           2757.968
+Time:                                     10:53:10   BIC                           2768.488
+Sample:                                          0   HQIC                          2761.897
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -1.0166      0.005   -210.113      0.000      -1.026      -1.007
+sigma2         0.3882      0.008     45.744      0.000       0.372       0.405
+===================================================================================
+Ljung-Box (Q):                       96.95   Jarque-Bera (JB):              5468.98
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               3.69   Skew:                             0.60
+Prob(H) (two-sided):                  0.00   Kurtosis:                        12.53
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.43
+The Mean Squared Test Error of our forecasts is 1.44

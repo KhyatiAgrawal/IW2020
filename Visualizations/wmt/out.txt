@@ -1,0 +1,36 @@
+Reading data for Walmart wmt
+date
+2006-10-20    36.069233
+2006-10-23    37.464680
+2006-10-24    37.479282
+2006-10-25    37.150513
+2006-10-26    37.808037
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(1, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1177.486
+Date:                           Thu, 07 May 2020   AIC                           2364.972
+Time:                                   08:04:58   BIC                           2391.271
+Sample:                                        0   HQIC                          2374.795
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.3848      0.131      2.936      0.003       0.128       0.642
+ma.L1         -0.4981      0.123     -4.035      0.000      -0.740      -0.256
+ar.S.L5       -0.0807      0.020     -3.944      0.000      -0.121      -0.041
+ma.S.L5       -1.0031      0.016    -61.432      0.000      -1.035      -0.971
+sigma2         0.2995      0.008     36.981      0.000       0.284       0.315
+===================================================================================
+Ljung-Box (Q):                       81.03   Jarque-Bera (JB):              2241.27
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.77   Skew:                            -0.14
+Prob(H) (two-sided):                  0.00   Kurtosis:                         9.14
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.31
+The Mean Squared Test Error of our forecasts is 0.29

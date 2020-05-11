@@ -1,0 +1,36 @@
+Reading data for Target tgt
+date
+2006-10-20    41.753338
+2006-10-23    42.991539
+2006-10-24    42.538010
+2006-10-25    41.803726
+2006-10-26    42.667595
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(1, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1654.497
+Date:                           Thu, 07 May 2020   AIC                           3318.993
+Time:                                   08:27:29   BIC                           3345.292
+Sample:                                        0   HQIC                          3328.817
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.3306      0.140      2.368      0.018       0.057       0.604
+ma.L1         -0.4434      0.133     -3.329      0.001      -0.704      -0.182
+ar.S.L5       -0.0543      0.019     -2.842      0.004      -0.092      -0.017
+ma.S.L5       -0.9985      0.035    -28.340      0.000      -1.068      -0.929
+sigma2         0.5887      0.024     24.547      0.000       0.542       0.636
+===================================================================================
+Ljung-Box (Q):                       56.99   Jarque-Bera (JB):               491.75
+Prob(Q):                              0.04   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.36   Skew:                             0.00
+Prob(H) (two-sided):                  0.00   Kurtosis:                         5.88
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.61
+The Mean Squared Test Error of our forecasts is 0.27

@@ -1,0 +1,33 @@
+Reading data for lowe's cos. low
+date
+2006-10-20    24.049137
+2006-10-23    24.557953
+2006-10-24    24.208149
+2006-10-25    23.850388
+2006-10-26    24.359203
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood                -825.555
+Date:                             Thu, 07 May 2020   AIC                           1655.110
+Time:                                     10:55:53   BIC                           1665.630
+Sample:                                          0   HQIC                          1659.040
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -1.0000      9.096     -0.110      0.912     -18.828      16.828
+sigma2         0.1833      1.668      0.110      0.912      -3.085       3.452
+===================================================================================
+Ljung-Box (Q):                       50.01   Jarque-Bera (JB):               427.47
+Prob(Q):                              0.13   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.63   Skew:                             0.10
+Prob(H) (two-sided):                  0.00   Kurtosis:                         5.68
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.19
+The Mean Squared Test Error of our forecasts is 0.27

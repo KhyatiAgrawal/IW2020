@@ -1,0 +1,33 @@
+Reading data for Alphabet goog
+date
+2006-10-20    228.976746
+2006-10-23    239.492325
+2006-10-24    235.771271
+2006-10-25    242.391464
+2006-10-26    241.644257
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood               -4352.266
+Date:                             Thu, 07 May 2020   AIC                           8708.533
+Time:                                     08:14:09   BIC                           8719.053
+Sample:                                          0   HQIC                          8712.462
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -1.0000     10.094     -0.099      0.921     -20.784      18.784
+sigma2        26.1427    263.878      0.099      0.921    -491.048     543.333
+===================================================================================
+Ljung-Box (Q):                       44.96   Jarque-Bera (JB):              4974.90
+Prob(Q):                              0.27   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.78   Skew:                             0.28
+Prob(H) (two-sided):                  0.01   Kurtosis:                        12.15
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 27.26
+The Mean Squared Test Error of our forecasts is 31.53

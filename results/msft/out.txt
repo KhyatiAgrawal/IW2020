@@ -1,0 +1,34 @@
+Reading data for Microsoft msft
+date
+2006-10-20    21.050880
+2006-10-23    21.065685
+2006-10-24    20.939814
+2006-10-25    20.962025
+2006-10-26    20.991640
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(0, 1, 1, 5)   Log Likelihood                -646.360
+Date:                           Thu, 07 May 2020   AIC                           1298.720
+Time:                                   08:27:37   BIC                           1314.499
+Sample:                                        0   HQIC                          1304.614
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1         -0.0780      0.019     -4.001      0.000      -0.116      -0.040
+ma.S.L5       -1.0063      0.009   -115.468      0.000      -1.023      -0.989
+sigma2         0.1413      0.003     44.854      0.000       0.135       0.148
+===================================================================================
+Ljung-Box (Q):                       63.60   Jarque-Bera (JB):              1669.67
+Prob(Q):                              0.01   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.68   Skew:                             0.26
+Prob(H) (two-sided):                  0.00   Kurtosis:                         8.28
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.15
+The Mean Squared Test Error of our forecasts is 0.17

@@ -1,0 +1,35 @@
+Reading data for gartner inc it
+date
+2006-10-20    19.059999
+2006-10-23    19.010000
+2006-10-24    18.959999
+2006-10-25    18.760000
+2006-10-26    18.719999
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1238.427
+Date:                           Thu, 07 May 2020   AIC                           2484.855
+Time:                                   10:59:14   BIC                           2505.894
+Sample:                                        0   HQIC                          2492.713
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1         -0.0842      0.023     -3.702      0.000      -0.129      -0.040
+ar.S.L5       -0.0620      0.026     -2.411      0.016      -0.112      -0.012
+ma.S.L5       -1.0064      0.007   -136.344      0.000      -1.021      -0.992
+sigma2         0.3248      0.007     44.195      0.000       0.310       0.339
+===================================================================================
+Ljung-Box (Q):                       41.14   Jarque-Bera (JB):              1940.62
+Prob(Q):                              0.42   Prob(JB):                         0.00
+Heteroskedasticity (H):               1.44   Skew:                            -0.52
+Prob(H) (two-sided):                  0.00   Kurtosis:                         8.63
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.35
+The Mean Squared Test Error of our forecasts is 0.58

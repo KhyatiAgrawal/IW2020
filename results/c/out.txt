@@ -1,0 +1,35 @@
+Reading data for citigroup inc. c
+date
+2006-10-20    452.563446
+2006-10-23    459.001434
+2006-10-24    457.641113
+2006-10-25    461.268219
+2006-10-26    460.905518
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -4337.036
+Date:                           Thu, 07 May 2020   AIC                           8682.071
+Time:                                   10:43:43   BIC                           8703.111
+Sample:                                        0   HQIC                          8689.930
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1          0.0562      0.013      4.263      0.000       0.030       0.082
+ar.S.L5       -0.0759      0.017     -4.595      0.000      -0.108      -0.044
+ma.S.L5       -1.0085      0.015    -68.977      0.000      -1.037      -0.980
+sigma2        25.2872      0.561     45.104      0.000      24.188      26.386
+===================================================================================
+Ljung-Box (Q):                       83.91   Jarque-Bera (JB):              5747.97
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.02   Skew:                             0.00
+Prob(H) (two-sided):                  0.00   Kurtosis:                        12.85
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 25.86
+The Mean Squared Test Error of our forecasts is 0.45

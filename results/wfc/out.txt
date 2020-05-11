@@ -1,0 +1,35 @@
+Reading data for wells fargo wfc
+date
+2006-10-20    25.081837
+2006-10-23    25.109224
+2006-10-24    24.958590
+2006-10-25    24.917500
+2006-10-26    24.944885
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1490.992
+Date:                           Thu, 07 May 2020   AIC                           2989.984
+Time:                                   10:33:59   BIC                           3011.023
+Sample:                                        0   HQIC                          2997.843
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1         -0.1707      0.017    -10.170      0.000      -0.204      -0.138
+ar.S.L5       -0.0410      0.017     -2.360      0.018      -0.075      -0.007
+ma.S.L5       -1.0000      8.809     -0.114      0.910     -18.266      16.266
+sigma2         0.4672      4.117      0.113      0.910      -7.602       8.536
+===================================================================================
+Ljung-Box (Q):                       96.06   Jarque-Bera (JB):              2889.85
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.60   Skew:                             0.44
+Prob(H) (two-sided):                  0.00   Kurtosis:                         9.93
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.5
+The Mean Squared Test Error of our forecasts is 0.11

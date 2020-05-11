@@ -1,0 +1,36 @@
+Reading data for morgan stanley ms
+date
+2006-10-20    50.302120
+2006-10-23    50.927612
+2006-10-24    51.460930
+2006-10-25    51.006622
+2006-10-26    51.105396
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(1, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1946.964
+Date:                           Thu, 07 May 2020   AIC                           3903.928
+Time:                                   10:44:39   BIC                           3930.227
+Sample:                                        0   HQIC                          3913.751
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1         -0.9073      0.064    -14.158      0.000      -1.033      -0.782
+ma.L1          0.9304      0.057     16.314      0.000       0.819       1.042
+ar.S.L5       -0.0901      0.019     -4.633      0.000      -0.128      -0.052
+ma.S.L5       -0.9939      0.011    -86.890      0.000      -1.016      -0.971
+sigma2         0.8904      0.019     47.659      0.000       0.854       0.927
+===================================================================================
+Ljung-Box (Q):                       56.03   Jarque-Bera (JB):              2006.31
+Prob(Q):                              0.05   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.18   Skew:                             0.15
+Prob(H) (two-sided):                  0.00   Kurtosis:                         8.81
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.92
+The Mean Squared Test Error of our forecasts is 0.13

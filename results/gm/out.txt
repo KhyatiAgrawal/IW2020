@@ -1,0 +1,34 @@
+Reading data for General Motors gm
+date
+2010-11-18    26.155519
+2010-11-19    26.209070
+2010-11-22    26.071363
+2010-11-23    25.436413
+2010-11-24    25.612371
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                  606
+Model:             SARIMAX(0, 1, 0)x(1, 1, [1], 5)   Log Likelihood                -353.074
+Date:                             Thu, 07 May 2020   AIC                            712.147
+Time:                                     08:27:35   BIC                            725.338
+Sample:                                          0   HQIC                           717.282
+                                             - 606                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.S.L5       -0.0982      0.039     -2.487      0.013      -0.176      -0.021
+ma.S.L5       -0.9984      0.166     -6.030      0.000      -1.323      -0.674
+sigma2         0.1825      0.029      6.308      0.000       0.126       0.239
+===================================================================================
+Ljung-Box (Q):                       28.08   Jarque-Bera (JB):               177.47
+Prob(Q):                              0.92   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.65   Skew:                            -0.04
+Prob(H) (two-sided):                  0.00   Kurtosis:                         5.66
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.19
+The Mean Squared Test Error of our forecasts is 0.16

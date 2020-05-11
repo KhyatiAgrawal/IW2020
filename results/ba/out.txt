@@ -1,0 +1,33 @@
+Reading data for boeing company ba
+date
+2006-10-20    58.379494
+2006-10-23    59.136539
+2006-10-24    59.700768
+2006-10-25    57.750965
+2006-10-26    56.522552
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood               -1989.771
+Date:                             Thu, 07 May 2020   AIC                           3983.541
+Time:                                     10:33:56   BIC                           3994.061
+Sample:                                          0   HQIC                          3987.471
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -0.9985      0.025    -39.373      0.000      -1.048      -0.949
+sigma2         0.9438      0.035     26.593      0.000       0.874       1.013
+===================================================================================
+Ljung-Box (Q):                       50.23   Jarque-Bera (JB):               143.62
+Prob(Q):                              0.13   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.87   Skew:                            -0.09
+Prob(H) (two-sided):                  0.14   Kurtosis:                         4.55
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.98
+The Mean Squared Test Error of our forecasts is 1.06

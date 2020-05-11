@@ -1,0 +1,33 @@
+(219, 4)
+(102, 4)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.013
+Model:                            OLS   Adj. R-squared:                 -0.001
+Method:                 Least Squares   F-statistic:                    0.9288
+Date:                Thu, 07 May 2020   Prob (F-statistic):              0.428
+Time:                        21:53:11   Log-Likelihood:                -123.77
+No. Observations:                 219   AIC:                             255.5
+Df Residuals:                     215   BIC:                             269.1
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+Intercept       0.0112      0.029      0.383      0.702      -0.046       0.069
+polarity        0.0505      0.033      1.540      0.125      -0.014       0.115
+modality       -0.0094      0.032     -0.290      0.772      -0.073       0.054
+uncertainty     0.0034      0.034      0.100      0.920      -0.064       0.071
+==============================================================================
+Omnibus:                        3.104   Durbin-Watson:                   1.839
+Prob(Omnibus):                  0.212   Jarque-Bera (JB):                2.395
+Skew:                          -0.113   Prob(JB):                        0.302
+Kurtosis:                       2.540   Cond. No.                         1.56
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+The MSE on training set is 0.1813
+First out of sample date is 
+2013-01-02 00:00:00
+The MSE on test set is 0.0938

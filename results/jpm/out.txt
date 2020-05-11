@@ -1,0 +1,35 @@
+Reading data for jpmorgan chase & co. jpm
+date
+2006-10-20    33.669567
+2006-10-23    33.862492
+2006-10-24    33.683868
+2006-10-25    33.776764
+2006-10-26    34.134033
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(1, 1, 1)x(0, 1, 1, 5)   Log Likelihood               -1899.230
+Date:                           Thu, 07 May 2020   AIC                           3806.459
+Time:                                   11:00:00   BIC                           3827.499
+Sample:                                        0   HQIC                          3814.318
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.4925      0.073      6.750      0.000       0.349       0.636
+ma.L1         -0.6287      0.067     -9.377      0.000      -0.760      -0.497
+ma.S.L5       -1.0000      7.056     -0.142      0.887     -14.830      12.830
+sigma2         0.8297      5.856      0.142      0.887     -10.649      12.308
+===================================================================================
+Ljung-Box (Q):                       73.30   Jarque-Bera (JB):              1232.52
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.67   Skew:                             0.19
+Prob(H) (two-sided):                  0.00   Kurtosis:                         7.55
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.89
+The Mean Squared Test Error of our forecasts is 0.26

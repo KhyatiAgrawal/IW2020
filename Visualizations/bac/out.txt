@@ -1,0 +1,36 @@
+Reading data for bank of america corp bac
+date
+2006-10-20    41.511555
+2006-10-23    41.542545
+2006-10-24    41.364464
+2006-10-25    41.805748
+2006-10-26    41.945091
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(1, 1, 1)x(1, 1, 1, 5)   Log Likelihood               -1537.038
+Date:                           Thu, 07 May 2020   AIC                           3084.077
+Time:                                   10:46:56   BIC                           3110.376
+Sample:                                        0   HQIC                          3093.900
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.8118      0.073     11.174      0.000       0.669       0.954
+ma.L1         -0.8483      0.069    -12.331      0.000      -0.983      -0.713
+ar.S.L5       -0.0543      0.011     -4.946      0.000      -0.076      -0.033
+ma.S.L5       -1.0000      8.747     -0.114      0.909     -18.145      16.145
+sigma2         0.4983      4.361      0.114      0.909      -8.050       9.046
+===================================================================================
+Ljung-Box (Q):                      106.91   Jarque-Bera (JB):             26607.96
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.09   Skew:                            -0.54
+Prob(H) (two-sided):                  0.00   Kurtosis:                        24.16
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.53
+The Mean Squared Test Error of our forecasts is 0.03

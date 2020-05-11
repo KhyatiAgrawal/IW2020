@@ -1,0 +1,35 @@
+Reading data for general electric ge
+date
+2006-10-20    21.340544
+2006-10-23    21.376646
+2006-10-24    21.310461
+2006-10-25    21.424776
+2006-10-26    21.412743
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(1, 1, 1, 5)   Log Likelihood                -360.824
+Date:                           Thu, 07 May 2020   AIC                            729.649
+Time:                                   10:38:38   BIC                            750.688
+Sample:                                        0   HQIC                           737.508
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1         -0.0630      0.018     -3.474      0.001      -0.099      -0.027
+ar.S.L5       -0.0476      0.019     -2.561      0.010      -0.084      -0.011
+ma.S.L5       -1.0100      0.007   -137.572      0.000      -1.024      -0.996
+sigma2         0.0940      0.002     51.581      0.000       0.090       0.098
+===================================================================================
+Ljung-Box (Q):                       73.88   Jarque-Bera (JB):              4643.19
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.39   Skew:                            -0.63
+Prob(H) (two-sided):                  0.00   Kurtosis:                        11.76
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.1
+The Mean Squared Test Error of our forecasts is 0.04

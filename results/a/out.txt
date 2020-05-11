@@ -1,0 +1,33 @@
+Reading data for agilent technologies inc a
+date
+2006-10-20    21.482677
+2006-10-23    21.402704
+2006-10-24    21.488823
+2006-10-25    21.550344
+2006-10-26    21.790272
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood               -1045.288
+Date:                             Thu, 07 May 2020   AIC                           2094.576
+Time:                                     10:58:09   BIC                           2105.096
+Sample:                                          0   HQIC                          2098.505
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -1.0071      0.006   -178.438      0.000      -1.018      -0.996
+sigma2         0.2474      0.006     41.383      0.000       0.236       0.259
+===================================================================================
+Ljung-Box (Q):                       85.50   Jarque-Bera (JB):               844.49
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               2.72   Skew:                            -0.27
+Prob(H) (two-sided):                  0.00   Kurtosis:                         6.74
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.26
+The Mean Squared Test Error of our forecasts is 0.2

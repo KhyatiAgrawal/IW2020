@@ -1,0 +1,33 @@
+Reading data for Ford f
+date
+2006-10-20    5.630212
+2006-10-23    5.552893
+2006-10-24    5.834052
+2006-10-25    5.967603
+2006-10-26    5.960574
+Name: adjclose, dtype: float64
+                                      SARIMAX Results                                      
+===========================================================================================
+Dep. Variable:                            adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 0)x(0, 1, [1], 5)   Log Likelihood                 436.937
+Date:                             Thu, 07 May 2020   AIC                           -869.874
+Time:                                     08:27:32   BIC                           -859.354
+Sample:                                          0   HQIC                          -865.944
+                                            - 1428                                         
+Covariance Type:                               opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.S.L5       -0.9954      0.007   -133.903      0.000      -1.010      -0.981
+sigma2         0.0312      0.001     58.903      0.000       0.030       0.032
+===================================================================================
+Ljung-Box (Q):                       54.25   Jarque-Bera (JB):              4187.85
+Prob(Q):                              0.07   Prob(JB):                         0.00
+Heteroskedasticity (H):               2.00   Skew:                            -0.70
+Prob(H) (two-sided):                  0.00   Kurtosis:                        11.29
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 0.03
+The Mean Squared Test Error of our forecasts is 0.02

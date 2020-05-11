@@ -1,0 +1,34 @@
+Reading data for goldman sachs group gs
+date
+2006-10-20    151.842209
+2006-10-23    155.461456
+2006-10-24    158.104401
+2006-10-25    158.752518
+2006-10-26    162.767365
+Name: adjclose, dtype: float64
+                                     SARIMAX Results                                     
+=========================================================================================
+Dep. Variable:                          adjclose   No. Observations:                 1428
+Model:             SARIMAX(0, 1, 1)x(0, 1, 1, 5)   Log Likelihood               -3800.515
+Date:                           Thu, 07 May 2020   AIC                           7607.030
+Time:                                   10:45:41   BIC                           7622.810
+Sample:                                        0   HQIC                          7612.924
+                                          - 1428                                         
+Covariance Type:                             opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ma.L1         -0.0807      0.019     -4.199      0.000      -0.118      -0.043
+ma.S.L5       -1.0000     10.582     -0.095      0.925     -21.740      19.740
+sigma2        12.0316    127.330      0.094      0.925    -237.530     261.593
+===================================================================================
+Ljung-Box (Q):                       67.96   Jarque-Bera (JB):              1099.24
+Prob(Q):                              0.00   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.29   Skew:                            -0.02
+Prob(H) (two-sided):                  0.00   Kurtosis:                         7.31
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+The Mean Squared Training Error of our forecasts is 12.41
+The Mean Squared Test Error of our forecasts is 3.4
